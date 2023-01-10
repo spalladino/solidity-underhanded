@@ -1,5 +1,7 @@
 # ERC20 order-based exchange
 
+> Project built in the context of the [Solidity Underhanded contest 2022](https://underhanded.soliditylang.org/). Won 2nd place.
+
 Simple order-based exchange for selling ERC20 tokens in exchange for ETH. Orders are stored off-chain and signed by the sellers. Buyers submit the order to execute to the contract, along with the seller's signature and the ETH to purchase the tokens.
 
 Orders can be `EXACT` or `PARTIAL`. Exact orders need to be fulfilled in a single operation, whereas partial orders can be fulfilled in multiple purchases from multiple buyers.
